@@ -55,7 +55,7 @@ async def start(b, m):
         except Exception:
             await b.send_message(
                 chat_id=m.chat.id,
-                text="Something went wrong. Contact me [Support](https://t.me/greymatters_bots_discussion).",
+                text="Something went wrong. Contact me [Support](https://t.me/Infinity_XBotz_support).",
                 disable_web_page_preview=True)
             return
     await StreamBot.send_photo(
@@ -99,7 +99,7 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="**Something went wrong. Contact my [Support](https://t.me/greymatters_bots_discussion).**",
+                text="**Something went wrong. Contact my [Support](https://t.me/Infinity_XBotz_support).**",
                 disable_web_page_preview=True)
             return
     await message.reply_text(
@@ -107,8 +107,12 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("💁‍♂️ Owner", url="https://github.com/Adarsh-Goel")],
-                [InlineKeyboardButton("💥 Source Code", url="https://github.com/Greymattersbot/Filestreambot-pro")]
+                [
+                 InlineKeyboardButton("💁‍♂️ Owner", url="https://telegram.me/Madhuri_niranjan"),
+                 InlineKeyboardButton("💥 Updates channel", url="https://Infinity_XBotz")
+              ],[
+                 Inlinekeyboardbutton("Support group", url="https://telegram.me/Infinity_XBotz_support"),
+                 Inlinekeyboardbutton("Movie group", url="https://t.me/+Qn6fthcb7wI0ZTk1")
             ]
         )
                 )
