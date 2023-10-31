@@ -103,19 +103,14 @@ async def help_handler(bot, message):
                 disable_web_page_preview=True)
             return
     await message.reply_text(
-    text="<b>Send me any file or video, and I will provide you with a streamable link and a download link.</b>\n\n<b>I also support Channels. Add me to your Channel and send any media files to see the magic!</b>",
-    disable_web_page_preview=True,
-    reply_markup=InlineKeyboardMarkup(
-        [
+        text="""<b> Send me any file or video i will give you streamable link and download link.</b>\n
+<b> I also support Channels, add me to you Channel and send any media files and see miracle✨ also send /list to know all commands""",
+        
+        disable_web_page_preview=True,
+        reply_markup=InlineKeyboardMarkup(
             [
-                InlineKeyboardButton("💁‍♂️ Owner", url="https://telegram.me/Madhuri_niranjan"),
-                InlineKeyboardButton("💥 Updates channel", url="https://Infinity_XBotz")
-            ],
-            [
-                InlineKeyboardButton("Support group", url="https://telegram.me/Infinity_XBotz_support"),
-                InlineKeyboardButton("Movie group", url="https://t.me/+Qn6fthcb7wI0ZTk1")
+                [InlineKeyboardButton("💁‍♂️ Owner", url="https://telegram.me/Madhuri_niranjan")],
+                [InlineKeyboardButton("💥 Movie group", url="https://t.me/+Qn6fthcb7wI0ZTk1")]
             ]
-        ]
+        )
     )
-    )
-                
