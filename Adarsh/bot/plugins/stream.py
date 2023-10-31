@@ -77,22 +77,14 @@ async def private_receive_handler(c: Client, m: Message):
             quote=True
         )
         await m.reply_text(
-    text=msg_text,
-    quote=True,
-    disable_web_page_preview=True,
-    reply_markup=InlineKeyboardMarkup([
-        [InlineKeyboardButton("⚡Watch⚡", url=stream_link),
-         InlineKeyboardButton('⚡Download⚡', url=online_link)],
-        [
-            InlineKeyboardButton("💁‍♂️ Owner", url="https://telegram.me/Madhuri_niranjan"),
-            InlineKeyboardButton("💥 Updates channel", url="https://Infinity_XBotz")
-        ],
-        [
-            InlineKeyboardButton("Support group", url="https://telegram.me/Infinity_XBotz_support"),
-            InlineKeyboardButton("Movie group", url="https://t.me/+Qn6fthcb7wI0ZTk1")
-        ]
-    ])
-)
+            text=msg_text,
+            quote=True,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton("⚡Watch⚡", url=stream_link),
+                 InlineKeyboardButton('⚡Download⚡', url=online_link)]
+            ])
+        )
 
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
