@@ -113,6 +113,7 @@ async def help_handler(bot, message):
               ],[
                  Inlinekeyboardbutton("Support group", url="https://telegram.me/Infinity_XBotz_support"),
                  Inlinekeyboardbutton("Movie group", url="https://t.me/+Qn6fthcb7wI0ZTk1")
+                ]
             ]
         )
                 )
