@@ -82,7 +82,14 @@ async def private_receive_handler(c: Client, m: Message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("⚡Watch⚡", url=stream_link),
-                 InlineKeyboardButton('⚡Download⚡', url=online_link)]
+                 InlineKeyboardButton('⚡Download⚡', url=online_link)],
+                [
+                 InlineKeyboardButton("💁‍♂️ Owner", url="https://telegram.me/Madhuri_niranjan"),
+                 InlineKeyboardButton("💥 Updates channel", url="https://Infinity_XBotz")
+              ],[
+                 Inlinekeyboardbutton("Support group", url="https://telegram.me/Infinity_XBotz_support"),
+                 Inlinekeyboardbutton("Movie group", url="https://t.me/+Qn6fthcb7wI0ZTk1")
+                ]
             ])
         )
     except FloodWait as e:
